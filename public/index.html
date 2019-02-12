@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Chat</title>
+    
+</head>
+
+<body>
+    <div class="container messages">
+        <ul class="list-group" id="messagesList"></ul>
+    </div>
+    <form class="formMessage" id="messageForm">
+        <div class="form-group">
+            <input type="text" class="form-control" id="userName" aria-describedby="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="message" placeholder="Enter your message">
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="writeMessage">Ok</button>
+    </form>
+</body>
+<footer>
+    <script src="scripts/script.js"></script>
+</footer>
+
+</html>

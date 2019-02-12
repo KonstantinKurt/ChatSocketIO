@@ -1,0 +1,25 @@
+body{
+	background-color: #f2f6fc;
+}
+.messages {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+    border: 2px solid blue;
+    border-radius: 2%;
+    box-shadow: 7px 7px 5px #3A3939;
+    background-color: white;
+    overflow: scroll;
+}
+.formMessage{
+	position: absolute;
+    width: 80%;
+    height: 29%;
+    left: 10%;
+    top: 70%;
+    border: 2px solid blue;
+    box-shadow: 7px 7px 5px #3A3939;
+}
+
