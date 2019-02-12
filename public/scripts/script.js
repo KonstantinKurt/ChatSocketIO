@@ -7,14 +7,10 @@ let socket = io();
 socket.on('newMessage', (data) => {
     console.log('Data goes back from server!');
     let li = document.createElement('li');
-    li.innerHTML = '<span style="color:red">' + data.userName + '</span><span>' + data.message + '</span>';
-    document.getElementById('messagesList').appendChild('li');
+    li.innerHTML = '<span style="color:red">' + data.userName + '</span><span>:    ' + data.message + '</span>';
+    document.getElementById('messagesList').appendChild(li);
 
 });
-// socket.on('message', function(message) {
-//    console.log(`Info from server! ${message}`);
-// });
-
 let writeMessage = function() {
     document.getElementById('writeMessage').onclick = () => {
         socket.emit('newMessage', {
